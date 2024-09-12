@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecuperarSenha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- </div>
+    <br>
+    <center>
+    <table border="3" width="300" heigth="400">
+        
+        <tr>
+            
+            <td>
+                <h3>Recuperar Senha</h3>
+                <center><b>E-mail:</b> <input type="email" id="emailRecuperarSenha"></center> <br>
+                <center><button id="butaoRecuperarSenha" onclick="alerta()">Enviar</button></center>
+            <p></p>
+            </td>
+                
+        </tr>
+    </table>
+</center> -->
+
+<header>Recuperação de Senha</header>
+
+<section class="container">
+    <div class="form-container">
+        <h2></h2>
+        <form action="TelaLogin.html" id="recuperar_senha">
+            <center>
+                <section id="imagemLogo">
+                    <img src="/ProjetoECommerce/imagens/gatinhoDuvida.jpeg" alt="">
+                </section>
+            </center>
+            <div class="form-group">
+                <label for="recovery_email">Email para Recuperação</label>
+                <input type="email" id="recovery_email" name="recoveryemail" required>
+            </div>
+            <div class="form-group">
+                <button onclick="alerta()">Recuperar Senha</button>
+                <button onclick="window.location.href='TelaLogin.html'">Voltar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+</footer>
+
+    <script>
+        var email = document.getElementById("recovery_email");
+        function alerta(){
+                
+            
+            
+            
+                alert("Senha enviada para o e-mail informado.")
+                window.location.href="TelaLogin.html"
+            }
+                
+        
+    </script>
+</body>
+</html>

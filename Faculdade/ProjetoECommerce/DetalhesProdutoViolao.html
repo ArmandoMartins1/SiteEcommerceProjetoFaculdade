@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="back-arrow">
+            <a href="javascript:history.back()">←</a>
+        </div>
+        
+        <div class="title" id="titulo">Armando um Som</div>
+    
+        <nav>
+            <button onclick="location.href='TelaPrincipal.html'">Inicio</button>
+            <button onclick="location.href='Produtos.html'">Produtos</button>
+            <button onclick="location.href='Sobre.html'">Sobre</button>
+            <button onclick="location.href='TelaLogin.html'">Sair</button>
+            <button class="img-button" onclick="location.href='CarrinhoDeCompras.html'">
+                <img src="/ProjetoECommerce/imagens/carrinho-de-compras (1).png" alt="Image Button">
+            </button>
+        </nav>
+    </header>
+
+
+
+</div>
+    <!-- PRODUTO -->
+    <h1>Detalhes sobre o Violão:</h1>
+    <p>
+        <h2>Violão Eletroacústico Dreadnought Folk Aço GD-1 3 Tone Sunburst <br>
+        <s>R$899,00</s> por R$799,90 </h2>
+
+    </p>
+    
+    <img src="/ProjetoECommerce/imagens/violaocard.png" width="" height="" alt=""> 
+    <img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" onclick="location.href='CarrinhoDeCompras.html'" alt="">
+    <input type="button" value="comprar" onclick="location.href='CarrinhoDeCompras.html'">
+
+    
+    <ul> 
+        <b>Sobre este item</b>
+        <li>Eletroacústico</li>
+        <li>Controles: Volume, Bass, Middle, Treble, Chave Phase e Tuner</li>
+        <li>Equalização: GS-3T</li>
+    </ul>
+
+    <iframe width="800" height="590" src="https://www.youtube.com/embed/LQ15BqrHeY0" title="Violão Vintage 440WK - Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        <a href="https://www.amazon.com.br/Violao-Eletrico-Aco-Gd-1-Tabaco/dp/B07D5J9GXR/ref=asc_df_B07CT42ZC3/?tag=googleshopp00-20&linkCode=df0&hvadid=405664433690&hvpos=&hvnetw=g&hvrand=17403425792157457794&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101396&hvtargid=pla-1653226445230&mcid=b5decf3994fe3c41a19b61a21a134b08&th=1" target="_blank">Mais Detalhes...</a>
+    </p>
+
+
+
+    <footer>
+        <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+    </footer>
+
+
+    <script>
+        
+        function comprar(){
+            var result = window.prompt("Você vai comprar quantos Violões ?")
+            if(result != null){
+                alert("Certo, então você vai pagar: R$"+ result * 899)
+                alert("Compra realizada com sucesso!")
+
+            }else{
+                alert("Erro na compra!")
+                }
+        }
+    </script>
+</body>
+</html>

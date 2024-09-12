@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  
+</div>
+    <form action="get" id="formularioCadastro">
+        <fieldset>
+            <legend> <h1>Cadastro</h1></legend>
+        Nome
+        <label for="" id="nomeCadastro">Nome:
+        <input type="text" name="nome" id="inputNomeCadastro"></label> <br> <br>
+        
+        Sexo
+        <label for="" id="sexoCadastro">Sexo:</label> <br>
+        <input type="radio" id="sexoH" name="sexoHM" value="sexoH" ><label for="">Homem </label>
+        <input type="radio" id="sexoM" name="sexoHM" value="sexoM" ><label for="">Mulher </label> <br>
+        
+        <br>
+        OBS
+        <label for="" id="obsCadastro">Observações:  <br>
+        <textarea name="observacoes" id="obs" rows="10" cols="50"></textarea> </label>
+        <br> <br>
+
+        EMAIL
+        <label for="" id="idEmailCadastro">E-mail:
+        <input type="email" name="email" id="emailCadastro"> </label>
+        <br> <br>
+
+        SENHA
+        <label for="" id="idSenhaCadastro">Senha: 
+        <input type="password" name="" id="senhaCadastro"> </label> <br>
+        <label for="" id="idConfirmarSenhaCadastro">Confirmar Senha:
+        <input type="password" name="" id="confirmarSenhaCadastro"> </label>
+            <br>
+            <br>
+        BUTÕES
+        <center>
+            <button id="butaoCadastrar" type="submit" onclick="voltar2()">Cadastrar</button>
+            <button type="reset" id="butaoResetar">Limpar</button>
+        </center>
+    -->        
+        <header>Criação de Usuário</header>
+    
+        <section class="container">
+            <div class="form-container">
+                
+                <form action="TelaLogin.html" method="get">
+                    <div class="">
+                        <center>
+                            <section id="imagemLogo">
+                                <img src="/ProjetoECommerce/imagens/gatinhoCriando.gif" alt="">
+                            </section>
+                        </center>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="">
+                        <label for="" id="sexoCadastro">Sexo:</label> <br>
+                        <input type="radio" id="sexoH" name="sexoHM" value="sexoH" required><label for="">Homem </label>
+                        <input type="radio" id="sexoM" name="sexoHM" value="sexoM" required><label for="">Mulher </label> <br>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" onclick="voltar2">Criar Conta</button>
+                        
+                        <button type="reset">Limpar</button>
+                        <button onclick="window.location.href='TelaLogin.html'">Voltar</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+        </footer>
+        <script>
+                function voltar2(){
+                    alert("Cadastro Concluído!")                    
+                    window.location.href='TelaLogin.html'
+                }
+       
+        </script>
+    
+
+</body>
+</html>

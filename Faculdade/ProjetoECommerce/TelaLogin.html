@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header>Tela Login</header>
+
+
+    <!-- <section class="container">
+        <div class="form-container">
+            <h2>Criação de Usuário</h2>
+            <form action="criar_usuario.html" method="post">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" onclick="abrirTelaPrincipal()">Criar Conta</button>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+    <section class="container">
+        <div class="form-container">
+            <form  action="TelaPrincipal.html" id="formularioLogin">
+                <div class="form-group">
+                    <center>
+                        <section id="imagemLogo">
+                            <img src="/ProjetoECommerce/imagens/logoarmando.jpg" alt="">
+                        </section>
+                    </center>
+                    <label for="login_username">Nome de Usuário</label>
+                    <input type="text" id="login_username" name="login_username" placeholder="Ex: Armando123" required>
+                </div>
+                <div class="form-group">
+                    <label for="login_password">Senha</label>
+                    <input type="password" id="login_password" placeholder="A senha que você cadastrou" name="login_password" required>
+                </div>
+                <div class="form-group">
+                    <button class="butaoLogin" type="submit" onclick="MudaTela">Entrar</button>
+
+                    <button class="butaoLogin" type="submit" onclick="window.location.href='NovoUsuario.html'">Criar Usuário</button>
+                    
+                    <button class="butaoLogin" onclick="window.location.href='RecuperarSenha.html'"> RecuperarSenha</button>
+                </div>
+            </form>
+        </div>
+    </section>
+ <!-- Rodapé -->
+ <footer>
+    <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+</footer>
+    <script>
+
+        function MudaTela(){
+            var login = document.getElementById("login_username");
+            var password = document.getElementById("login_password");
+            
+            var url = 'TelaPrincipal.html'
+
+            if(login.value == "") {
+                alert( "Preencha o LOGIN!" );
+                login.focus();
+                return false;
+                
+            }
+            else if (password.value =="") {
+                alert("Preencha a Senha");
+                password.focus();
+                return false;
+            }
+            
+            var formulario = document.getElementById("formularioLogin");
+            formulario.submit();
+
+            }
+                
+            
+    </script>
+
+</body>
+</html>

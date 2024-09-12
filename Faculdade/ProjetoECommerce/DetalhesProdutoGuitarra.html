@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="back-arrow">
+            <a href="javascript:history.back()">←</a>
+        </div>
+        
+        <div class="title" id="titulo">Armando um Som</div>
+    
+        <nav>
+            <button onclick="location.href='TelaPrincipal.html'">Inicio</button>
+            <button onclick="location.href='Produtos.html'">Produtos</button>
+            <button onclick="location.href='Sobre.html'">Sobre</button>
+            <button onclick="location.href='TelaLogin.html'">Sair</button>
+            <button class="img-button" onclick="location.href='CarrinhoDeCompras.html'">
+                <img src="/ProjetoECommerce/imagens/carrinho-de-compras (1).png" alt="Image Button">
+            </button>
+        </nav>
+    </header>
+    <h1>Detalhes sobre a Guitarra:</h1>
+    <p>
+        <h2>Guitarra elétrica TAGIMA - TG 500 BK DF BK, Black Dark Fingerboard Mint Green <br>
+            R$1.805,00 
+        </h2>
+
+    </p>
+    
+    <img src="/ProjetoECommerce/imagens/guitarraCard.png" width="800" alt=""> 
+    <img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" onclick="location.href='CarrinhoDeCompras.html'" alt="">
+    <input type="button" value="comprar" onclick="location.href='CarrinhoDeCompras.html'">
+    <ul> 
+        <b>Sobre este item</b>
+        <li>Guitarra elétrica tagima estilo strat</li>
+        <li>Captadores 3 single coils cerâmicos</li>
+        <li>6 cordas</li>
+    </ul>
+
+    <iframe width="800" height="590" src="https://www.youtube.com/embed/Zt7kZCNcdEE" title="Review Guitarra Tagima Tg-510 com Márcio Sanches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<p>
+    <a href="https://www.amazon.com.br/Guitarra-el%C3%A9trica-TAGIMA-Black-Fingerboard/dp/B08JM9GBT5" target="_blank">Mais Detalhes...</a>
+</p>
+    
+
+<footer>
+    <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+</footer>
+
+<script>
+        
+    function comprar(){
+        var result = window.prompt("Você vai comprar quantas Guitarras ?")
+        if(result != null){
+            alert("Certo, então você vai pagar: R$"+ result * 1085)
+            alert("Compra realizada com sucesso!")
+
+        }else{
+            alert("Erro na compra!")
+            }
+    }
+</script>
+
+</body>
+</html>

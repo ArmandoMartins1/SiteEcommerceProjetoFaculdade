@@ -1,0 +1,343 @@
+/* *{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+} */
+
+
+/* .cabecalhoGeral{
+    
+    text-align: center;
+    cursor:pointer ;
+    
+    
+}
+ */
+ .content {
+    padding-top: 70px; /* Ajustar conforme a altura do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo de texto */
+}
+ p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+ body {
+    font-family: Arial, sans-serif;
+    margin: 30;
+    padding: 10;
+    
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.back-arrow {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.back-arrow a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #777;
+}
+.img-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.img-button img {
+    width: 40px;
+    height: 40px;
+}
+.imagemLogo{
+    height: 70px;
+    margin: 10px auto;
+}
+
+.butaoLogin {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/* CABEÇALHO */
+
+header h1 {
+    margin: 0;
+}
+*{
+    color: #ff6600;
+}
+main {
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #4d8ff3;
+}
+
+.promo-button img {
+    width: 60px;
+    height: 60px;
+}
+.promo-description {
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* FIGURAS */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  /* solid background */
+  background: rgb(0,212,255);
+  
+  /* gradient background*/
+  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
+  
+  /* photo background */
+  background-image: url(https://images.unsplash.com/photo-1619204715997-1367fe5812f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889&q=80);
+  background-size: cover;
+  background-position: center;  
+  
+ 
+  align-items: center;
+  justify-content: center;    
+  height: 100vh;  
+}
+
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 38px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.banner-image {
+  background-image: url(/ProjetoECommerce/imagens/violaocard.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+
+.banner-imageGuittar {
+    background-image: url(/ProjetoECommerce/imagens/guitarraCard.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  .banner-imageBaixo {
+    background-image: url(/ProjetoECommerce/imagens/conta-baixo.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  
+
+h1{
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255,255,255,0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper{
+  margin-top: 18px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
+  
+}
+
+.outline:hover{
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;  
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+}
+
+.fill:hover{
+  transform: scale(1.125);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}
+  
+
+
+
+
+
+/* CABEÇALHO GERAL */ 
+/* #cabecalho{ 
+    color: #ffffff;
+    background-color: #5F0000;
+    border: solid 10px #0d7eff ;
+    border-radius: 40px;
+} */
+
+
+
+/* BUTÕES */
+
+/* #butaoRecuperarSenha{
+    background-color: #060606;
+    color: #0d7eff;
+}
+#butaoResetar{
+    background-color: #060606;
+    color: #0d7eff;
+}
+#butaoCadastrar{
+    background-color: #060606;
+    color: #0d7eff;
+} */
+

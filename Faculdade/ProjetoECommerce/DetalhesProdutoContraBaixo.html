@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cabecalhoGeral">
+    <header>
+        <div class="back-arrow">
+            <a href="javascript:history.back()">←</a>
+        </div>
+        
+        <div class="title" id="titulo">Armando um Som</div>
+    
+        <nav>
+            <button onclick="location.href='TelaPrincipal.html'">Inicio</button>
+            <button onclick="location.href='Produtos.html'">Produtos</button>
+            <button onclick="location.href='Sobre.html'">Sobre</button>
+            <button onclick="location.href='TelaLogin.html'">Sair</button>
+            <button class="img-button" onclick="location.href='CarrinhoDeCompras.html'">
+                <img src="/ProjetoECommerce/imagens/carrinho-de-compras (1).png" alt="Image Button">
+            </button>
+        </nav>
+    </header>
+    <!-- PRODUTO -->
+    <h1>Detalhes sobre o Contra-Baixo:</h1>
+    <p>
+        <h2>Contra-baixo Tagima Xb-21 Precision Natural !!! <br> Cor Marrom Orientação Da Mão Destro Quantidade De Cordas 4
+            <br>
+            R$1.367,00
+        </h2>
+
+    </p>
+    
+    <img src="/ProjetoECommerce/imagens/conta-baixo.png" width="800" alt=""> 
+    <img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" onclick="location.href='CarrinhoDeCompras.html'" alt="">
+    <input type="button" value="comprar" onclick="location.href='CarrinhoDeCompras.html'">
+    <ul> 
+        <b>Sobre este item</b>
+        <li>Orientação da mão: Destro</li>
+        <li>Corpo feito de okoume</li>
+        <li>Tem 21 trastes.</li>
+    </ul>
+
+    <iframe width="800" height="590" src="https://www.youtube.com/embed/FRSgUxFLxOg" title="Review Baixo Tagima Millenium 5 Top - Review Completo -Falando Baixo -  Diego Pessoa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        <a href="https://www.mercadolivre.com.br/contra-baixo-tagima-xb-21-precision-natural-cor-marrom-orientaco-da-mo-destro-quantidade-de-cordas-4/p/MLB26856810?item_id=MLB4653934280&from=gshop&matt_tool=88695644&matt_word=&matt_source=google&matt_campaign_id=14300459461&matt_ad_group_id=124587331143&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539490865637&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735128761&matt_product_id=MLB26856810-product&matt_product_partition_id=2267715106241&matt_target_id=aud-1966917494853:pla-2267715106241&cq_src=google_ads&cq_cmp=14300459461&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=CjwKCAjwhIS0BhBqEiwADAUhc2mzoVQKbPJHTTXzLdaNJc3gKoUWl4_kR9a9RCueV0Gn4R1udQOIdhoCV44QAvD_BwE" target="_blank">Mais Detalhes...</a>
+    </p>
+
+
+    <footer>
+        <p>&copy; 2024 Armando um Som - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        
+        function comprar(){
+            var result = window.prompt("Você vai comprar quantos Contra-Baixos ?")
+            if(result != null){
+                alert("Certo, então você vai pagar: R$"+ result * 1367)
+                alert("Compra realizada com sucesso!")
+
+            }else{
+                alert("Erro na compra!")
+                }
+            
+        }
+    </script>
+
+
+</body>
+</html>
